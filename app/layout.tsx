@@ -16,7 +16,7 @@ const libreBaskerville = Libre_Baskerville({
 });
 
 export const metadata: Metadata = {
-  title: "Orbit Drops LLC — Builder & Operator of Internet Companies",
+  title: "Orbit Drops LLC",
   description:
     "Orbit Drops LLC builds, scales, and operates e-commerce brands, SaaS products, and consumer applications with a long-term, operator-led approach.",
 };
