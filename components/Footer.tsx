@@ -1,7 +1,6 @@
 const footerLinks = [
   { label: "About", href: "#about" },
   { label: "Focus Areas", href: "#focus" },
-  { label: "Updates", href: "#updates" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -15,8 +14,8 @@ export default function Footer() {
               <span className="font-serif text-2xl italic">OD</span>
             </div>
             <p className="max-w-xs text-sm leading-relaxed text-white/70">
-              Orbit Drops LLC — builder and operator of e-commerce brands, SaaS
-              products, and consumer applications.
+              Orbit Drops LLC — Building the next generation of internet
+              companies.
             </p>
           </div>
 
@@ -47,7 +46,8 @@ export default function Footer() {
 
         <div className="mt-14 border-t border-white/15 pt-8 text-center">
           <p className="text-xs text-white/50">
-            &copy; {new Date().getFullYear()} Orbit Drops LLC. All rights reserved.
+            &copy; {new Date().getFullYear()} Orbit Drops LLC. All rights
+            reserved.
           </p>
         </div>
       </div>
