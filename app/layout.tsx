@@ -1,16 +1,24 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Libre_Baskerville, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const sourceSans = Source_Sans_3({
+  variable: "--font-source-sans",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
+
+const libreBaskerville = Libre_Baskerville({
+  variable: "--font-libre-baskerville",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
-  title: "Orbit Drops LLC — We Build Apps. We Scale Companies.",
+  title: "Orbit Drops LLC — Builder & Operator of Internet Companies",
   description:
-    "Orbit Drops turns your boldest ideas into high-performance products and keeps them growing. App development, growth strategy, and scaling infrastructure.",
+    "Orbit Drops LLC builds, scales, and operates e-commerce brands, SaaS products, and consumer applications with a long-term, operator-led approach.",
 };
 
 export default function RootLayout({
@@ -19,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} scroll-smooth`}>
+    <html lang="en" className={`${sourceSans.variable} ${libreBaskerville.variable}`}>
       <body className="antialiased">{children}</body>
     </html>
   );

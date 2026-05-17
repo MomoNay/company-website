@@ -1,13 +1,15 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background: #05050f;
-  --color-surface: #0e0e1f;
-  --color-violet: #7c3aed;
-  --color-cyan: #06b6d4;
-  --color-text-primary: #f1f5f9;
-  --color-text-muted: #94a3b8;
-  --font-sans: var(--font-geist-sans);
+  --color-navy: #0c2340;
+  --color-navy-dark: #081829;
+  --color-navy-light: #1a3a5c;
+  --color-slate-section: #e4eaf0;
+  --color-slate-muted: #5a6b7d;
+  --color-accent: #1e4d7b;
+  --color-accent-light: #2d6ba3;
+  --font-sans: var(--font-source-sans);
+  --font-serif: var(--font-libre-baskerville);
 }
 
 html {
@@ -15,63 +17,33 @@ html {
 }
 
 body {
-  background-color: #05050f;
-  color: #f1f5f9;
-  font-family: var(--font-geist-sans), Arial, sans-serif;
+  background-color: #ffffff;
+  color: #2c3e50;
+  font-family: var(--font-source-sans), "Helvetica Neue", Arial, sans-serif;
 }
 
-@keyframes orbit-spin {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
+.font-serif {
+  font-family: var(--font-libre-baskerville), Georgia, "Times New Roman", serif;
 }
 
-@keyframes orbit-spin-reverse {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(-360deg); }
+.section-heading {
+  color: #0c2340;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
 }
 
-@keyframes pulse-glow {
-  0%, 100% { opacity: 0.4; }
-  50%       { opacity: 0.9; }
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50%       { transform: translateY(-12px); }
-}
-
-.animate-orbit {
-  animation: orbit-spin 18s linear infinite;
-}
-
-.animate-orbit-reverse {
-  animation: orbit-spin-reverse 12s linear infinite;
-}
-
-.animate-pulse-glow {
-  animation: pulse-glow 3s ease-in-out infinite;
-}
-
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-
-.grid-bg {
-  background-image:
-    linear-gradient(rgba(124, 58, 237, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(124, 58, 237, 0.05) 1px, transparent 1px);
-  background-size: 60px 60px;
-}
-
-.glass-card {
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.gradient-text {
-  background: linear-gradient(135deg, #a78bfa 0%, #06b6d4 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.link-arrow:hover {
+  color: var(--color-accent-light);
 }
