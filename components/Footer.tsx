@@ -36,10 +36,10 @@ export default function Footer() {
               Inquiries
             </p>
             <a
-              href="mailto:orbitdropsllc@gmail.com"
+              href="mailto:info@orbitdropsllc.com"
               className="text-sm text-white/90 transition-colors hover:text-white"
             >
-              orbitdropsllc@gmail.com
+              info@orbitdropsllc.com
             </a>
           </div>
         </div>
